@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photos | Covenant Mission Church</title>
+  <meta name="description" content="Photos from the ministries of Covenant Mission Church.">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="photos-page">
+
+<!--
+  HOW TO EDIT THIS PAGE
+  - Put your pictures in the "images" folder using the file names written in the comments below
+    (for example images/youth-1.jpg). Only photos that exist are shown on this page.
+  - To add more photos to a group: copy one <figure> line, paste it under the last one,
+    and change the file name (for example youth-4.jpg) and caption.
+  - Click any photo on the website to see it bigger.
+-->
+
+<header class="nav">
+  <a href="index.html#home" class="brand"><img src="images/logo.png" alt="Covenant Mission Church logo"><span>Covenant Mission Church</span></a>
+  <button class="menu-btn" aria-label="Menu" onclick="document.body.classList.toggle('open')">☰</button>
+  <nav>
+    <a href="index.html#about">About</a>
+    <a href="index.html#ministries">Ministries</a>
+    <a href="photos.html">Photos</a>
+    <a href="index.html#visit">Plan Your Visit</a>
+    <a href="index.html#give" class="nav-give">Donate</a>
+  </nav>
+</header>
+
+<section class="mhero" style="background-image: linear-gradient(rgba(60,10,20,.75), rgba(30,50,80,.78)), url('images/hero.jpg'), linear-gradient(135deg, #8e1a2b, #2f6a9a); min-height: 40vh;">
+  <div>
+    <p>Moments from our church</p>
+    <h1>Photos</h1>
+  </div>
+</section>
+
+<main class="detail wide">
+  <a class="back" href="index.html#home">← Back to home</a>
+
+  <p class="all-soon">📷 Photos coming soon. Please check back!</p>
+
+  <div class="tabs">
+    <button class="tab active" data-filter="all">All</button>
+    <button class="tab" data-filter="church">Church Life</button>
+    <button class="tab" data-filter="youth">Youth Ministry</button>
+    <button class="tab" data-filter="outreach">Community Outreach</button>
+    <button class="tab" data-filter="bible">Adult Bible Study</button>
+    <button class="tab" data-filter="planting">Church Planting</button>
+  </div>
+
+  <!-- ===== CHURCH LIFE PHOTOS: images/gallery-1.jpg, gallery-2.jpg ... ===== -->
+  <section class="photo-section" data-group="church">
+    <h2>Church Life</h2>
+    <div class="gallery">
+      <figure><img src="images/gallery-1.jpg" alt="Church Life" onerror="this.parentElement.classList.add('empty')"><figcaption>Church Life</figcaption></figure>
+      <figure><img src="images/gallery-2.jpg" alt="Church Life" onerror="this.parentElement.classList.add('empty')"><figcaption>Church Life</figcaption></figure>
+      <figure><img src="images/gallery-3.jpg" alt="Church Life" onerror="this.parentElement.classList.add('empty')"><figcaption>Church Life</figcaption></figure>
+      <figure><img src="images/gallery-4.jpg" alt="Church Life" onerror="this.parentElement.classList.add('empty')"><figcaption>Church Life</figcaption></figure>
+      <figure><img src="images/gallery-5.jpg" alt="Church Life" onerror="this.parentElement.classList.add('empty')"><figcaption>Church Life</figcaption></figure>
+      <figure><img src="images/gallery-6.jpg" alt="Church Life" onerror="this.parentElement.classList.add('empty')"><figcaption>Church Life</figcaption></figure>
+    </div>
+    <p class="soon">Photos coming soon.</p>
+  </section>
+
+  <!-- ===== YOUTH MINISTRY PHOTOS: images/youth-1.jpg, youth-2.jpg ... ===== -->
+  <section class="photo-section" data-group="youth">
+    <h2>Youth Ministry</h2>
+    <div class="gallery">
+      <figure><img src="images/youth-1.jpg" alt="Youth Ministry" onerror="this.parentElement.classList.add('empty')"><figcaption>Youth Ministry</figcaption></figure>
+      <figure><img src="images/youth-2.jpg" alt="Youth Ministry" onerror="this.parentElement.classList.add('empty')"><figcaption>Youth Ministry</figcaption></figure>
+      <figure><img src="images/youth-3.jpg" alt="Youth Ministry" onerror="this.parentElement.classList.add('empty')"><figcaption>Youth Ministry</figcaption></figure>
+    </div>
+    <p class="soon">Photos coming soon.</p>
+  </section>
+
+  <!-- ===== COMMUNITY OUTREACH PHOTOS: images/outreach-1.jpg, outreach-2.jpg ... ===== -->
+  <section class="photo-section" data-group="outreach">
+    <h2>Community Outreach</h2>
+    <div class="gallery">
+      <figure><img src="images/outreach-1.jpg" alt="Community Outreach" onerror="this.parentElement.classList.add('empty')"><figcaption>Community Outreach</figcaption></figure>
+      <figure><img src="images/outreach-2.jpg" alt="Community Outreach" onerror="this.parentElement.classList.add('empty')"><figcaption>Community Outreach</figcaption></figure>
+      <figure><img src="images/outreach-3.jpg" alt="Community Outreach" onerror="this.parentElement.classList.add('empty')"><figcaption>Community Outreach</figcaption></figure>
+    </div>
+    <p class="soon">Photos coming soon.</p>
+  </section>
+
+  <!-- ===== ADULT BIBLE STUDY PHOTOS: images/bible-study-1.jpg, bible-study-2.jpg ... ===== -->
+  <section class="photo-section" data-group="bible">
+    <h2>Adult Bible Study</h2>
+    <div class="gallery">
+      <figure><img src="images/bible-study-1.jpg" alt="Adult Bible Study" onerror="this.parentElement.classList.add('empty')"><figcaption>Adult Bible Study</figcaption></figure>
+      <figure><img src="images/bible-study-2.jpg" alt="Adult Bible Study" onerror="this.parentElement.classList.add('empty')"><figcaption>Adult Bible Study</figcaption></figure>
+      <figure><img src="images/bible-study-3.jpg" alt="Adult Bible Study" onerror="this.parentElement.classList.add('empty')"><figcaption>Adult Bible Study</figcaption></figure>
+    </div>
+    <p class="soon">Photos coming soon.</p>
+  </section>
+
+  <!-- ===== CHURCH PLANTING PHOTOS: images/church-planting-1.jpg, church-planting-2.jpg ... ===== -->
+  <section class="photo-section" data-group="planting">
+    <h2>Church Planting</h2>
+    <div class="gallery">
+      <figure><img src="images/church-planting-1.jpg" alt="Church Planting" onerror="this.parentElement.classList.add('empty')"><figcaption>Church Planting</figcaption></figure>
+      <figure><img src="images/church-planting-2.jpg" alt="Church Planting" onerror="this.parentElement.classList.add('empty')"><figcaption>Church Planting</figcaption></figure>
+      <figure><img src="images/church-planting-3.jpg" alt="Church Planting" onerror="this.parentElement.classList.add('empty')"><figcaption>Church Planting</figcaption></figure>
+    </div>
+    <p class="soon">Photos coming soon.</p>
+  </section>
+
+</main>
+
+<footer>
+  <img src="images/logo.png" alt="">
+  <p><b>Covenant Mission Church</b> · Walking in Faith, Serving in Love</p>
+  <p class="small">© <span id="year"></span> Covenant Mission Church. All rights reserved.</p>
+</footer>
+
+<div class="lightbox" id="lightbox"><img alt=""><span class="cap"></span></div>
+
+<script src="script.js"></script>
+</body>
+</html>
