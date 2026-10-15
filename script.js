@@ -1,3 +1,4 @@
+document.documentElement.classList.add("js");
 // Footer year updates automatically
 document.getElementById("year").textContent = new Date().getFullYear();
 
@@ -45,4 +46,13 @@ document.querySelectorAll(".nav nav a").forEach(function (link) {
   });
   box.addEventListener("click", function () { box.classList.remove("show"); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") box.classList.remove("show"); });
+})();
+
+// Fade-in on scroll
+(function () {
+  if (!("IntersectionObserver" in window)) return;
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll(".card, .ministry, .step").forEach(function (el) { el.classList.add("reveal"); io.observe(el); });
 })();
